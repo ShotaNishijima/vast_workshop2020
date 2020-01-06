@@ -22,7 +22,7 @@ https://github.com/James-Thorson-NOAA/VAST
 https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
 
   - 上記のリンクにテストコードがありますので、走らせていただき、動くか確認お願いします
-  - FishStatsUtilsのバージョンが最新(2.3.4)の場合は，156-176行目でエラーが出ますので，こちら（[https://github.com/ShotaNishijima/vast_workshop2020/issues/4](url)）をご覧ください
+  - FishStatsUtilsのバージョンが最新(2.3.4)の場合は，156-176行目でエラーが出ますので，[こちら](https://github.com/ShotaNishijima/vast_workshop2020/issues/4)をご覧ください
   
 - 参考文献
 https://www.int-res.com/abstracts/meps/v624/p155-166/
