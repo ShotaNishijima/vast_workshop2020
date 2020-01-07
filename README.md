@@ -10,6 +10,13 @@
   - 15:45-16:15 細かい設定などの質疑応答
   - 16:15-17:30 vastの基礎続き（ハンズオン形式 ）；vastの応用（事例紹介，総合討論，など）
 
+## 持ち物
+* PC
+* 解析したいデータ
+  * tidy形式にしてください
+* プログラム内容の参考にしたいので，PCとデータについて[こちら](https://chouseisan.com/s?h=19541a5a62ea4d04acee9f9be0358091)に記入をお願いします．匿名で構いません
+
+## 事前準備
 - vastパッケージのインストール
 https://github.com/James-Thorson-NOAA/VAST
   - リンク先の『Installation Instructions』を参照してください．
@@ -23,6 +30,10 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
 
   - 上記のリンクにテストコードがありますので、走らせていただき、動くか確認お願いします
   - 最新版のFishStatsUtils（2.3.4）の場合は，156-176行目でエラーが出ますので，[こちら](https://github.com/ShotaNishijima/vast_workshop2020/issues/4)をご覧ください
-  
-- 参考文献
-https://www.int-res.com/abstracts/meps/v624/p155-166/
+* プログラム内容の参考にしたいので，進捗状況について[こちら](https://chouseisan.com/s?h=a99aa7cba2ec4b6fba8e1a6765de3149)に記入をお願いします．匿名で構いません
+
+### 参考文献
+* Thorson JT (2019) Guidance for decisions using the Vector Autoregressive Spatio-Temporal (VAST) package in stock, ecosystem, habitat and climate assessments. Fish Res 210:143–161
+https://doi.org/10.1016/j.fishres.2018.10.013
+* Kanamori Y, Takasuka A, Nishijima S, Okamura H (2019) Climate change shifts the spawning ground northward and extends the spawning period of chub mackerel in the western North Pacific. MEPS 624:155–166
+https://doi.org/10.3354/meps13037
