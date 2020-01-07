@@ -32,7 +32,7 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
   - 最新版のFishStatsUtils（2.3.4）の場合は，156-176行目でエラーが出ますので，[こちら](https://github.com/ShotaNishijima/vast_workshop2020/issues/4)をご覧ください
 * プログラム内容の参考にしたいので，進捗状況について[こちら](https://chouseisan.com/s?h=a99aa7cba2ec4b6fba8e1a6765de3149)に記入をお願いします．匿名で構いません
 
-### 参考文献
+## 参考文献
 * Thorson JT (2019) Guidance for decisions using the Vector Autoregressive Spatio-Temporal (VAST) package in stock, ecosystem, habitat and climate assessments. Fish Res 210:143–161
 https://doi.org/10.1016/j.fishres.2018.10.013
 * Kanamori Y, Takasuka A, Nishijima S, Okamura H (2019) Climate change shifts the spawning ground northward and extends the spawning period of chub mackerel in the western North Pacific. MEPS 624:155–166
