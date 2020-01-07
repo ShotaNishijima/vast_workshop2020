@@ -14,7 +14,7 @@
 * PC
 * 解析したいデータ
   * tidy形式にしてください
-* プログラム内容の参考にしたいので，PCとデータについて[こちら]()に記入をお願いします
+* プログラム内容の参考にしたいので，PCとデータについて[こちら](https://chouseisan.com/s?h=19541a5a62ea4d04acee9f9be0358091)に記入をお願いします．匿名で構いません
 
 ## 事前準備
 - vastパッケージのインストール
@@ -30,7 +30,7 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
 
   - 上記のリンクにテストコードがありますので、走らせていただき、動くか確認お願いします
   - 最新版のFishStatsUtils（2.3.4）の場合は，156-176行目でエラーが出ますので，[こちら](https://github.com/ShotaNishijima/vast_workshop2020/issues/4)をご覧ください
-* プログラム内容の参考にしたいので，進捗状況について[こちら]()に記入をお願いします
+* プログラム内容の参考にしたいので，進捗状況について[こちら](https://chouseisan.com/s?h=a99aa7cba2ec4b6fba8e1a6765de3149)に記入をお願いします．匿名で構いません
 
 ### 参考文献
 * Thorson JT (2019) Guidance for decisions using the Vector Autoregressive Spatio-Temporal (VAST) package in stock, ecosystem, habitat and climate assessments. Fish Res 210:143–161
