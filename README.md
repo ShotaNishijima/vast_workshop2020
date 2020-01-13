@@ -45,8 +45,12 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
 https://doi.org/10.1016/j.fishres.2018.10.013
 * Kanamori Y, Takasuka A, Nishijima S, Okamura H (2019) Climate change shifts the spawning ground northward and extends the spawning period of chub mackerel in the western North Pacific. MEPS 624:155–166
 https://doi.org/10.3354/meps13037    
-### **描画**
+### **描画パッケージ**
 `{ggvast}` https://github.com/Yuki-Kanamori/ggvast    
+* `{VAST}`の推定結果を`Save.RData`から引っ張り出せる
+* 論文や資源評価で使えそうな図が作れる
+* 軸の名前とかが変えられる
+* 本家VASTより図がめっちゃ綺麗
 ### **vastのコード**
 * 複数のカテゴリーで解析した例（masaVAST）準備中
 * catchability covariateに他種の密度，overdispersion configに年と月の交互作用を入れた例（[gomasaVAST](https://github.com/Yuki-Kanamori/gomasaVAST)）
