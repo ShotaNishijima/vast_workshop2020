@@ -47,10 +47,18 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
 
 ## 参考資料    
 ### **論文**
-* Thorson JT (2019) Guidance for decisions using the Vector Autoregressive Spatio-Temporal (VAST) package in stock, ecosystem, habitat and climate assessments. Fish Res 210:143–161
-https://doi.org/10.1016/j.fishres.2018.10.013
-* Kanamori Y, Takasuka A, Nishijima S, Okamura H (2019) Climate change shifts the spawning ground northward and extends the spawning period of chub mackerel in the western North Pacific. MEPS 624:155–166
-https://doi.org/10.3354/meps13037    
+* VAST全般について（モデルの説明，適用例，課題など）    
+  Thorson JT (2019) Guidance for decisions using the Vector Autoregressive Spatio-Temporal (VAST) package in stock, ecosystem, habitat and climate assessments. Fish Res 210:143–161    
+  https://doi.org/10.1016/j.fishres.2018.10.013
+* マサバの産卵量に適用した例    
+  Kanamori Y, Takasuka A, Nishijima S, Okamura H (2019) Climate change shifts the spawning ground northward and extends the spawning period of chub mackerel in the western North Pacific. MEPS 624:155–166    
+  https://doi.org/10.3354/meps13037    
+### **マニュアル**
+* モデル診断についても書いてある    
+  [single species](single-species.pdf)    
+  [multi species](multi-species.pdf)
+* 1.4 model settingsの参考になる    
+  [user manual](VAST_user_manual.pdf)    
 ### **描画パッケージ**
 ggvast https://github.com/Yuki-Kanamori/ggvast    
 * VASTの推定結果を`Save.RData`から引っ張り出せる
