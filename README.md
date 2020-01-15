@@ -19,7 +19,7 @@
 * PC
 * 解析したいデータ
   * 最低限必要なのは，年，緯度経度，cpue（アバンダンス）の情報
-  * tidy形式にしてください（tidyデータとは？　https://id.fnshr.info/2017/01/09/tidy-data-intro/）
+  * 以下のようなtidy形式のデータにしてください（tidyデータとは？　https://id.fnshr.info/2017/01/09/tidy-data-intro/）
   ![tidydata](tidydata.png)
 * ### プログラム内容の参考にしたいので，PCとデータについて[こちら](https://chouseisan.com/s?h=19541a5a62ea4d04acee9f9be0358091)に記入をお願いします．  
     **随時編集可能ですので，プログラムと資料準備のためにとりあえず現状を書き込んで下さい！** 匿名で構いません
