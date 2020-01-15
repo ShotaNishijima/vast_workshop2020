@@ -71,3 +71,5 @@ ggvast https://github.com/Yuki-Kanamori/ggvast
 * catchability covariateに他種の密度，overdispersion configに年と月の交互作用を入れた例（[gomasaVAST](https://github.com/Yuki-Kanamori/gomasaVAST)）
 * 共変量に水温を入れた例（masaVAST_NPFC2018）準備中
 * catchability covariateに漁具を入れた例（chiVAST）準備中
+### **アップデート情報**    
+https://github.com/James-Thorson-NOAA/VAST/releases
