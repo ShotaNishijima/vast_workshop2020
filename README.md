@@ -54,7 +54,7 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
   Kanamori Y, Takasuka A, Nishijima S, Okamura H (2019) Climate change shifts the spawning ground northward and extends the spawning period of chub mackerel in the western North Pacific. MEPS 624:155–166    
   https://doi.org/10.3354/meps13037    
 ### **マニュアル**
-* モデル診断についても書いてある    
+* 4.figuresで出てくる図表についての説明も書かれている．モデル診断についても書いてある    
   [single species](single-species.pdf)    
   [multi species](multi-species.pdf)
 * 1.4 model settingsの参考になる    
