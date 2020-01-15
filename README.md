@@ -18,7 +18,7 @@
 ## 持ち物
 * PC
 * 解析したいデータ
-  * 年，緯度経度，アバンダンスの情報が入っていること
+  * 最低限必要なのは，年，緯度経度，cpue（アバンダンス）の情報
   * tidy形式にしてください（tidyデータとは？　https://id.fnshr.info/2017/01/09/tidy-data-intro/）
   ![tidydata](tidydata.png)
 * ### プログラム内容の参考にしたいので，PCとデータについて[こちら](https://chouseisan.com/s?h=19541a5a62ea4d04acee9f9be0358091)に記入をお願いします．  
