@@ -61,7 +61,7 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
   [single species](single-species.pdf)    
   [multi species](multi-species.pdf)
 * 1.4 model settingsの参考になる    
-  [vast model structure](VAST_model_structure.pdf) 最新のオプションについても書かれている
+  [vast model structure](VAST_model_structure.pdf) 最新のオプションについても書かれている    
   [user manual](VAST_user_manual.pdf) 昔のシンプルな設定のやつ
 ### **描画パッケージ**
 ggvast https://github.com/Yuki-Kanamori/ggvast    
