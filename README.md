@@ -30,7 +30,6 @@
 https://github.com/James-Thorson-NOAA/VAST
   - リンク先の『Installation Instructions』を参照してください．
   - インストールが出来ない場合は，『Known instllation/ usage issues』部分も参考にしてください．
-  - インストールがうまくいかないことはよくありますので，うまくいかなくても大丈夫です．できるだけ最新バージョンのRなどにするとうまくいくようです．
   - 上手くいかなかった場合はこのgithub上のissueに上げていただけると助かります（情報共有のため）
   - エラーの解決策もissueに載っている可能性があるので参照してください（例えば[Windows](https://github.com/ShotaNishijima/vast_workshop2020/issues/1), [Mac](https://github.com/ShotaNishijima/vast_workshop2020/issues/2)）
 
