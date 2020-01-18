@@ -276,13 +276,14 @@ plot_range_index(Report = Report,
                  Year_Set = Year_Set)
 
 ### plot spatio and spatiotemporal covariance
-Cov_List = summarize_covariance(Report = Report, Data=Data_Geostat,ParHat = Obj$env$parList(),
-                                Data = TmbData, SD = Opt$SD, plot_cor = FALSE,
-                                # category_names = unique(Data_Geostat[, "Category"]),
-                                category_names = c("Large","Medium","Small"),
-                                plotdir = DateFile, plotTF = FieldConfig, 
-                                mgp = c(2,0.5, 0), tck = -0.02, oma = c(0, 5, 2, 2))
+# Cov_List = summarize_covariance(Report = Report, 
+#                                 # Data=Data_Geostat,
+#                                 ParHat = Obj$env$parList(),
+#                                 Data = TmbData,
+#                                 SD = Opt$SD, plot_cor = FALSE,
+#                                 # category_names = unique(Data_Geostat[, "Category"]),
+#                                 category_names = c("Large","Medium","Small"),
+#                                 plotdir = DateFile, plotTF = FieldConfig, 
+#                                 mgp = c(2,0.5, 0), tck = -0.02, oma = c(0, 5, 2, 2))
+# 
 
-Data_Geostat$Category
-
-?summarize_covariance
