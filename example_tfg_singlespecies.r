@@ -1,15 +1,16 @@
 
 
+
+
 # install.packages("TMB")
 # install.packages("devtools")
 
 library(devtools)
 library(TMB)
 
+
 # install.packages("INLA", repos=c(getOption("repos"), INLA="https://inla.r-inla-download.org/R/stable"), dep=TRUE)
 # install_github("james-thorson/VAST", INSTALL_opts="--no-staged-install")
-
-# devtools::load_all("~/git/VAST")
 
 # Please change here --------------------------------------------
 dirname = "~/git/vast_workshop2020"
@@ -24,7 +25,6 @@ setwd(dir = dirname)
 
 # 1.2 Version for cpp code
 Version = get_latest_version(package = "VAST")
-# Version = "VAST_v4_2_0"
 
 # 1.3 Spatial settings
 Method = c("Grid", "Mesh", "Spherical_mesh")[2]
@@ -46,10 +46,10 @@ Options = c(SD_site_density = 0, SD_site_logdensity = 0,
 strata.limits = data.frame('STRATA'="All_areas")
 
 # 1.6 Derived objects
-Region = "British_Columbia"
+Region = "other"
 
-# 1.7 Save settingss
-DateFile = paste0(getwd(),'/VAST_output4/')
+# 1.7 Save settings
+DateFile = paste0(getwd(),'/example_tfg_sizeS/')
 dir.create(DateFile)
 Record = list(Version = Version, Method = Method, grid_size_km = grid_size_km, n_x = n_x, 
               FieldConfig = FieldConfig, RhoConfig = RhoConfig, OverdispersionConfig = OverdispersionConfig, 
@@ -62,16 +62,47 @@ capture.output(Record, file = paste0(DateFile, "/Record.txt"))
 
 # 2. Prepare the data ----------------------------------------------
 # 2.1 Data-frame for catch-rate data
-Data_Set = "BC_pacific_cod"
-data(BC_pacific_cod_example, package = "FishStatsUtils")
-Data_Geostat = data.frame("Catch_KG" = BC_pacific_cod_example[, 'PCOD_WEIGHT'], 
-                          "Year" = BC_pacific_cod_example[, 'Year'], 
-                          "Vessel" = "missing", 
-                          "AreaSwept_km2" = BC_pacific_cod_example[, 'TOW.LENGTH..KM.']/100, 
-                          "Lat" = BC_pacific_cod_example[, 'LAT'], 
-                          "Lon" = BC_pacific_cod_example[,'LON'], 
+
+# Data_Set = "BC_pacific_cod"
+# data(BC_pacific_cod_example, package = "FishStatsUtils")
+
+# data(south_africa_grid, package = "FishStatsUtils")
+# south_africa_grid$cen_long
+# south_africa_grid$cen_lat
+dat <- read.csv("C:/Users/00007802/Dropbox/tfg/VAST/tfg_longline_200509-201803.csv",row.names = 1)
+dat <- subset(dat, Lat<36)
+library(tidyverse)
+dats <- dat %>% 
+  gather(key=Catch_category,Catch,-Year,-Month,-Lat,-Lon,-Gear,-Needle) %>%
+  mutate(Size = str_sub(Catch_category,-1,-1)) %>%
+  mutate(Category=if_else(Size=="S",0,if_else(Size=="M",1,2))) %>%
+  mutate(Unit = str_sub(Catch_category,7,9)) %>% 
+  select(-Catch_category)
+
+dat2 = select(dats,Year,Lat,Lon,Month,Needle,Gear,Catch,Category,Unit) %>% 
+  # rename(Catch_Num=Catch_Num_S) %>%
+  mutate(YearMonthGearCategory=paste0(dats$Year,dats$Month,dats$Gear,dats$Category)) %>% 
+  mutate(YearMonthGear=paste0(dats$Year,dats$Month,dats$Gear)) %>% 
+  mutate(MonthGear=paste0(dats$Month,dats$Gear)) %>%
+  mutate(YearGear=paste0(dats$Year,dats$Gear)) %>%
+  filter(Unit=="Kg_") %>% 
+  rename(Catch_KG = Catch)
+
+nrow(dat2)
+dat2 <- filter(dat2, Category==0 & Needle > 0)
+nrow(dat2)
+colnames(dat2)
+class(dat2$YearMonthGear)
+
+Data_Geostat = data.frame("Catch_KG" = dat2[, 'Catch_KG'], 
+                          "Year" = dat2[, 'Year'], 
+                          "Vessel" = dat2[,"YearMonthGear"], 
+                          "AreaSwept_km2" = dat2[, 'Needle'], 
+                          "Lat" = dat2[, 'Lat'], 
+                          "Lon" = dat2[,'Lon'], 
                           "Pass"=0)
 Data_Geostat = na.omit(Data_Geostat)
+nrow(Data_Geostat)
 
 # 2.2 Extrapolation grid
 Extrapolation_List = FishStatsUtils::make_extrapolation_info(
