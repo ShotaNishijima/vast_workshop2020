@@ -35,7 +35,7 @@ n_x = 100
 # 1.4 Model settings
 FieldConfig = c(Omega1 = 1, Epsilon1 = 1, Omega2 = 1, Epsilon2 = 1)
 RhoConfig = c(Beta1 = 0, Beta2 = 0, Epsilon1 = 0, Epsilon2 = 0) #0: fixed, 1: independent, 2:RW, 3:constant, 4:AR
-OverdispersionConfig = c("Eta1" = 0, "Eta2" = 0) #overdispersion
+OverdispersionConfig = c("Eta1" = 1, "Eta2" = 1) #overdispersion
 ObsModel = c(PosDist = 2, Link = 1) #[1] = 1(lognormal), 2(gamma); [2] = 0(log), 1()
 Options = c(SD_site_density = 0, SD_site_logdensity = 0,
             Calculate_Range = 1, Calculate_evenness = 0, 
