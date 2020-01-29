@@ -15,7 +15,7 @@
 * 解析したいデータ
   * 最低限必要なのは，年，緯度経度，cpue（アバンダンス）の情報
   * 以下のようなtidy形式のデータにしてください（tidyデータとは？　https://id.fnshr.info/2017/01/09/tidy-data-intro/）
-  ![tidydata](tidydata.png)
+  ![tidydata](HP用図表/tidydata.png)
 
 ## 事前準備
 - vastパッケージのインストール
