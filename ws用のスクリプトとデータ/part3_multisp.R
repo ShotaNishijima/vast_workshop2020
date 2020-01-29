@@ -230,10 +230,10 @@ plot_range_index(Report = Report,
 
 # 4.11 Plot factors
 FishStatsUtils::plot_factors(Report = Report,
-             ParHat = Obj$env$parList(),
-             Data = TmbData,
-             SD = Opt$SD,
-             mapdetails_list = MapDetails_List,
-             Year_Set = Year_Set,
-             category_names = levels(DF[,"Sci"]),
-             plotdir = DateFile)
+                             ParHat = Obj$env$parList(),
+                             Data = TmbData,
+                             SD = Opt$SD,
+                             mapdetails_list = MapDetails_List,
+                             Year_Set = Year_Set,
+                             category_names = levels(DF[,"Sci"]),
+                             plotdir = DateFile)

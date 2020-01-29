@@ -231,12 +231,12 @@ plot_range_index(Report = Report,
 
 # 4.10 Plot overdispersion
 FishStatsUtils::plot_overdispersion(filename1 = paste0("Overdispersion"),
-                    filename2 = paste0("Overdispersion--panel"),
-                    Data = TmbData,
-                    ParHat = Save[["ParHat"]],
-                    Report = Report,
-                    ControlList1 = list(Width = 5, Height = 10,
-                                        Res = 200, Units = "in"),
-                    ControlList2 = list(Width = TmbData$n_c,
-                                        Height = TmbData$n_c,
-                                        Res = 200, Units = "in"))
+                                    filename2 = paste0("Overdispersion--panel"),
+                                    Data = TmbData,
+                                    ParHat = Save[["ParHat"]],
+                                    Report = Report,
+                                    ControlList1 = list(Width = 5, Height = 10,
+                                                        Res = 200, Units = "in"),
+                                    ControlList2 = list(Width = TmbData$n_c,
+                                                        Height = TmbData$n_c,
+                                                        Res = 200, Units = "in"))
