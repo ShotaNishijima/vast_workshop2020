@@ -13,7 +13,7 @@ df = read.csv("df.csv", fileEncoding = "CP932")
 summary(df)
 df = df %>% 
   filter(sakana == "C", between(year, 2022, 2026)) %>% 
-  select(year, keido, ido, cpue, sakana) %>% 
+  select(year, month, keido, ido, cpue, sakana) %>% 
   rename(lat = ido, lon = keido, spp = sakana) %>% mutate(time = paste(year, month, sep = "_"))
 summary(df)
 
