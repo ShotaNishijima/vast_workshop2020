@@ -8,7 +8,7 @@
   - 13:45-15:15 [vastで遊ぶ=基礎編=](vastの基礎1_2.1.pdf)（ハンズオン形式; 単純なモデルの実行とアウトプットの見方）
   - 15:15-15:30 休憩
   - 15:30-16:15 細かい設定などの質疑応答
-  - 16:15-17:30 [vastで遊ぶ=応用編=](vastの基礎2_1.0.pdf)（ハンズオン形式; ggvastを用いた作図方法と複雑なモデルの紹介，総合討論）
+  - 16:15-17:30 [vastで遊ぶ=応用編=](vastの基礎2_1.0.pdf)（ハンズオン形式; 複雑なモデルの紹介，総合討論）
 
 ## 持ち物
 * PC
@@ -57,9 +57,7 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
 ### **描画パッケージ**
 ggvast https://github.com/Yuki-Kanamori/ggvast    
 * VASTの推定結果を`Save.RData`から引っ張り出せる
-* 論文や資源評価で使えそうな図が作れる
 * 軸の名前とかが変えられる
-* 本家VASTより図がめっちゃ綺麗
 ### **vastのコード**
 * 複数のカテゴリーで解析した例（masaVAST）準備中
 * catchability covariateに他種の密度，overdispersion configに年と月の交互作用を入れた例（[gomasaVAST](https://github.com/Yuki-Kanamori/gomasaVAST)）
