@@ -235,5 +235,5 @@ FishStatsUtils::plot_factors(Report = Report,
                              SD = Opt$SD,
                              mapdetails_list = MapDetails_List,
                              Year_Set = Year_Set,
-                             category_names = levels(DF[,"Sci"]),
+                             category_names = category_name,
                              plotdir = DateFile)
