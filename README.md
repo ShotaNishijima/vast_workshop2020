@@ -32,7 +32,7 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
     **2行目のディレクトリの設定以外は，何も変更をしないで大丈夫です**
    - 最新版のFishStatsUtils（2.3.4）の場合は，156-176行目でエラーが出ますので，[こちら](https://github.com/ShotaNishijima/vast_workshop2020/issues/4)をご覧ください
    - 3.Build and run modelを実行後『The model is likely not converged』と出ますが，モデル診断で収束していると判断できる場合であっても出力されてしまうメッセージです．ちゃんと実行できている（VASTは動いている）のでご安心ください．
-   - 1月14日にcppファイルが更新されたようです（8.5.0）．コンパイルがうまくいかない場合は，一つ前のバージョン（8.4.0）を指定したりと試行錯誤が必要になります．バージョンの指定方法などは[issue](https://github.com/ShotaNishijima/vast_workshop2020/issues) を参考にしてください．
+   - 1月14日にcppファイルが更新されたようです（8.5.0）．コンパイルがうまくいかない場合は，一つ前のバージョン（8.4.0）を指定したりと試行錯誤が必要になります．バージョンの指定方法などは[issues](https://github.com/ShotaNishijima/vast_workshop2020/issues) を参考にしてください．
    - cppファイルの更新に伴い，FishStatuUtilsのバージョンも新しく2.5.0になったようです．現在描画で出てくる不具合は，そのことが原因だと思われます．
    どこでどんなエラー・ワーニングが出るのか，こちらでも情報を集めている段階です．
    
