@@ -21,6 +21,7 @@ summary(df)
 # 1. Settings ------------------------------------------------------
 # 1.1 Version for cpp code
 Version = get_latest_version(package = "VAST")
+Version = "VAST_v4_2_0"
 
 # 1.2 Spatial settings
 Method = c("Grid", "Mesh", "Spherical_mesh")[2]
@@ -101,7 +102,8 @@ TmbData = make_data(
   #a_i = Data_Geostat[, 'AreaSwept_km2'], # catch and effort
   s_i = Data_Geostat[, 'knot_i'] - 1,
   t_i = Data_Geostat[, 'Year'],
-  Q_ik = model.matrix(as.formula(~0+Gear), data = Data_Geostat),
+  #Q_ik = model.matrix(as.formula(~0+Gear), data = Data_Geostat),
+  Q_ik = model.matrix(as.formula(~factor(Gear)), data = Data_Geostat),
   spatial_list = Spatial_List, 
   Options = Options,
   Aniso = TRUE
