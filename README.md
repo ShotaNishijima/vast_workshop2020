@@ -5,32 +5,23 @@
 - プログラム：
   - 13:00-13:10 趣旨説明
   - 13:10-13:45 cpue標準化～vastとは？
-  - 13:45-15:15 [vastの基礎](vastの基礎1_2.1.pdf)（ハンズオン形式；インストール，インプットの作り方，簡単な実行，アウトプットの見方，など）
+  - 13:45-15:15 [vastで遊ぶ=基礎編=](vastの基礎1_2.1.pdf)（ハンズオン形式; 単純なモデルの実行とアウトプットの見方）
   - 15:15-15:30 休憩
   - 15:30-16:15 細かい設定などの質疑応答
-  - 16:15-17:30 [vastの基礎2](vastの基礎2_1.0.pdf)（ハンズオン形式 ）；vastの応用（事例紹介，総合討論，など）
-
-# プログラム内容と資料作成のため，以下の記入をお願いします！
-* ## PCとデータについて　https://chouseisan.com/s?h=19541a5a62ea4d04acee9f9be0358091
-* ## 進捗状況について　https://chouseisan.com/s?h=a99aa7cba2ec4b6fba8e1a6765de3149
-* 匿名で構いません．随時変更可能です．
+  - 16:15-17:30 [vastで遊ぶ=応用編=](vastの基礎2_1.0.pdf)（ハンズオン形式; 複雑なモデルの紹介，総合討論）
 
 ## 持ち物
 * PC
 * 解析したいデータ
   * 最低限必要なのは，年，緯度経度，cpue（アバンダンス）の情報
   * 以下のようなtidy形式のデータにしてください（tidyデータとは？　https://id.fnshr.info/2017/01/09/tidy-data-intro/）
-  ![tidydata](tidydata.png)
-* ### プログラム内容の参考にしたいので，PCとデータについて[こちら](https://chouseisan.com/s?h=19541a5a62ea4d04acee9f9be0358091)に記入をお願いします．  
-    **随時編集可能ですので，プログラムと資料準備のためにとりあえず現状を書き込んで下さい！** 匿名で構いません
-  * 書き込みが多くなると質問事項が見にくくなるようです．読めない場合には『出席表をダウンロードする』からエクセルファイルを落として対応してください．お手数をお掛けします．．
+  ![tidydata](HP用図表/tidydata.png)
 
 ## 事前準備
 - vastパッケージのインストール
 https://github.com/James-Thorson-NOAA/VAST
   - リンク先の『Installation Instructions』を参照してください．
   - インストールが出来ない場合は，『Known instllation/ usage issues』部分も参考にしてください．
-  - インストールがうまくいかないことはよくありますので，うまくいかなくても大丈夫です．できるだけ最新バージョンのRなどにするとうまくいくようです．
   - 上手くいかなかった場合はこのgithub上のissueに上げていただけると助かります（情報共有のため）
   - エラーの解決策もissueに載っている可能性があるので参照してください（例えば[Windows](https://github.com/ShotaNishijima/vast_workshop2020/issues/1), [Mac](https://github.com/ShotaNishijima/vast_workshop2020/issues/2)）
 
@@ -41,11 +32,10 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
     **2行目のディレクトリの設定以外は，何も変更をしないで大丈夫です**
    - 最新版のFishStatsUtils（2.3.4）の場合は，156-176行目でエラーが出ますので，[こちら](https://github.com/ShotaNishijima/vast_workshop2020/issues/4)をご覧ください
    - 3.Build and run modelを実行後『The model is likely not converged』と出ますが，モデル診断で収束していると判断できる場合であっても出力されてしまうメッセージです．ちゃんと実行できている（VASTは動いている）のでご安心ください．
-   - 1月14日にcppファイルが更新されたようです（8.5.0）．コンパイルがうまくいかない場合は，一つ前のバージョン（8.4.0）を指定したりと試行錯誤が必要になります．バージョンの指定方法などは[issue](https://github.com/ShotaNishijima/vast_workshop2020/issues) を参考にしてください．
-* ### プログラム内容の参考にしたいので，進捗状況について[こちら](https://chouseisan.com/s?h=a99aa7cba2ec4b6fba8e1a6765de3149)に記入をお願いします．  
-    **随時編集可能ですので，プログラムと資料準備のためにとりあえず現状を書き込んで下さい！** 匿名で構いません
-  * 書き込みが多くなると質問事項が見にくくなるようです．読めない場合には『出席表をダウンロードする』からエクセルファイルを落として対応してください．お手数をお掛けします．．
-
+   - 1月14日にcppファイルが更新されたようです（8.5.0）．コンパイルがうまくいかない場合は，一つ前のバージョン（8.4.0）を指定したりと試行錯誤が必要になります．バージョンの指定方法などは[issues](https://github.com/ShotaNishijima/vast_workshop2020/issues) を参考にしてください．
+   - cppファイルの更新に伴い，FishStatuUtilsのバージョンも新しく2.5.0になったようです．現在描画で出てくる不具合は，そのことが原因だと思われます．
+   どこでどんなエラー・ワーニングが出るのか，こちらでも情報を集めている段階です．
+   
 
 ## 参考資料    
 ### **論文・ドキュメント**
@@ -67,9 +57,7 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
 ### **描画パッケージ**
 ggvast https://github.com/Yuki-Kanamori/ggvast    
 * VASTの推定結果を`Save.RData`から引っ張り出せる
-* 論文や資源評価で使えそうな図が作れる
 * 軸の名前とかが変えられる
-* 本家VASTより図がめっちゃ綺麗
 ### **vastのコード**
 * 複数のカテゴリーで解析した例（masaVAST）準備中
 * catchability covariateに他種の密度，overdispersion configに年と月の交互作用を入れた例（[gomasaVAST](https://github.com/Yuki-Kanamori/gomasaVAST)）
