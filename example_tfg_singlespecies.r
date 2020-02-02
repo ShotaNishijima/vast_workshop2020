@@ -8,6 +8,10 @@
 library(devtools)
 library(TMB)
 
+which_size = c("S","M","L")[2]
+if (which_size == "S") category_value = 0
+if (which_size == "M") category_value = 1
+if (which_size == "L") category_value = 2
 
 # install.packages("INLA", repos=c(getOption("repos"), INLA="https://inla.r-inla-download.org/R/stable"), dep=TRUE)
 # install_github("james-thorson/VAST", INSTALL_opts="--no-staged-install")
@@ -49,7 +53,7 @@ strata.limits = data.frame('STRATA'="All_areas")
 Region = "other"
 
 # 1.7 Save settings
-DateFile = paste0(getwd(),'/example_tfg_sizeS/')
+DateFile = paste0(getwd(),'/example_tfg_size',which_size,'/')
 dir.create(DateFile)
 Record = list(Version = Version, Method = Method, grid_size_km = grid_size_km, n_x = n_x, 
               FieldConfig = FieldConfig, RhoConfig = RhoConfig, OverdispersionConfig = OverdispersionConfig, 
@@ -88,8 +92,8 @@ dat2 = select(dats,Year,Lat,Lon,Month,Needle,Gear,Catch,Category,Unit) %>%
   filter(Unit=="Kg_") %>% 
   rename(Catch_KG = Catch)
 
-nrow(dat2)
-dat2 <- filter(dat2, Category==0 & Needle > 0)
+dat2 <- filter(dat2, Category==category_value & Needle > 0) # size S
+
 nrow(dat2)
 colnames(dat2)
 class(dat2$YearMonthGear)
@@ -161,6 +165,7 @@ Opt = TMBhelper::fit_tmb(obj = Obj,
                          getsd = TRUE, 
                          savedir = DateFile, 
                          bias.correct = TRUE)
+(Check = VAST::check_fit(Opt)) # FALSE
 
 Report = Obj$report()
 Save = list("Opt" = Opt, 
@@ -269,3 +274,4 @@ plot_range_index(Report = Report,
                  Znames = colnames(TmbData$Z_xm), 
                  PlotDir = DateFile, 
                  Year_Set = Year_Set)
+
