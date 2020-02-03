@@ -33,7 +33,7 @@ vast_index = rbind(vast_index, vast_index2)
 
 # make a figure
 # nominalにはerror barが無いため，geom_errorbarのwarningが出るが問題ない
-plot_index(vast_index = vast_index,
+ggvast::plot_index(vast_index = vast_index,
            DG = DG,
            category_name = category_name,
            fig_output_dirname = fig_output_dirname)
@@ -42,7 +42,7 @@ plot_index(vast_index = vast_index,
 
 # 2. get dens --------------------------------------------------
 # make a data-frame
-df_dens = get_dens(category_name = category_name)
+df_dens = ggvast::get_dens(category_name = category_name)
 
 
 # 3. map dens ---------------------------------------------------
@@ -61,7 +61,7 @@ shape = 16 #16はclosed dot
 size = 1.9 #shapeの大きさ
 
 # make figures
-map_dens(data = data,
+ggvast::map_dens(data = data,
          region = region,
          scale_name = scale_name,
          ncol = ncol,
@@ -73,7 +73,7 @@ map_dens(data = data,
 
 # 4. get cog ----------------------------------------------------
 # make a data-frame
-cog_nom = get_cog(data = DG)
+cog_nom = ggvast::get_cog(data = DG)
 
 
 
@@ -88,7 +88,7 @@ size = 1.9 #shapeの大きさ
 use_biascorr = TRUE
 
 # make figures
-map_cog(data_type = data_type,
+ggvast::map_cog(data_type = data_type,
         category_name = category_name,
         region = region,
         ncol = ncol,
