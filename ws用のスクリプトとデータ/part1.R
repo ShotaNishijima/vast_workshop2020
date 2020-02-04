@@ -45,7 +45,7 @@ strata.limits = data.frame('STRATA'="All_areas")
 Region = "others"
 
 # 1.6 Save settings
-DateFile = paste0(getwd(),'/sakanaC/')
+DateFile = paste0(dirname,'/sakanaC/')
 dir.create(DateFile)
 Record = list(Version = Version, Method = Method, grid_size_km = grid_size_km, n_x = n_x, 
               FieldConfig = FieldConfig, RhoConfig = RhoConfig, OverdispersionConfig = OverdispersionConfig, 

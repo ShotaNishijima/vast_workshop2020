@@ -21,6 +21,7 @@ summary(df)
 # 1. Settings ------------------------------------------------------
 # 1.1 Version for cpp code
 Version = get_latest_version(package = "VAST")
+Version = "VAST_v4_2_0"
 
 # 1.2 Spatial settings
 Method = c("Grid", "Mesh", "Spherical_mesh")[2]
@@ -29,7 +30,7 @@ grid_size_km = 25
 n_x = 100
 
 # 1.3 Model settings
-FieldConfig = c(Omega1 = 3, Epsilon1 = 3, Omega2 = 3, Epsilon2 = 3) #factor analysis
+FieldConfig = c(Omega1 = 1, Epsilon1 = 1, Omega2 = 1, Epsilon2 = 1) #factor analysis
 RhoConfig = c(Beta1 = 0, Beta2 = 0, Epsilon1 = 0, Epsilon2 = 0) #0: fixed, 1: independent, 2:RW, 3:constant, 4:AR
 OverdispersionConfig = c("Eta1" = 0, "Eta2" = 0) #overdispersion
 ObsModel = c(PosDist = 2, Link = 0)
@@ -45,7 +46,7 @@ strata.limits = data.frame('STRATA'="All_areas")
 Region = "others"
 
 # 1.6 Save settings
-DateFile = paste0(getwd(),'/multisp/')
+DateFile = paste0(dirname,'/multisp/')
 dir.create(DateFile)
 Record = list(Version = Version, Method = Method, grid_size_km = grid_size_km, n_x = n_x, 
               FieldConfig = FieldConfig, RhoConfig = RhoConfig, OverdispersionConfig = OverdispersionConfig, 
