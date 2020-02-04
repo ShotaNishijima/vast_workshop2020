@@ -166,7 +166,7 @@ Opt = TMBhelper::fit_tmb(obj = Obj,
                          getsd = TRUE, 
                          savedir = DateFile, 
                          bias.correct = TRUE)
-
+(VAST::check_fit(Opt,check_gradients = TRUE))
 Report = Obj$report()
 Save = list("Opt" = Opt, 
             "Report" = Report, 
