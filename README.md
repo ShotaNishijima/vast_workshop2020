@@ -42,7 +42,7 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
 * マサバの産卵量に適用した例    
   Kanamori Y, Takasuka A, Nishijima S, Okamura H (2019) Climate change shifts the spawning ground northward and extends the spawning period of chub mackerel in the western North Pacific. MEPS 624:155–166    
   https://doi.org/10.3354/meps13037    
-* 和文での解説    
+* 国内の資源評価で適用された例（和文で解説が書かれている）    
   [令和元 (2019) 年度ゴマサバ太平洋系群の資源評価　補足資料3](http://www.fra.affrc.go.jp/shigen_hyoka/SCmeeting/2019-1/detail_goma_p_2.pdf)
 ### **マニュアル**
 * 4.figuresで出てくる図表についての説明も書かれている．モデル診断についても書いてある    
