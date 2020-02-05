@@ -43,7 +43,7 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
   Kanamori Y, Takasuka A, Nishijima S, Okamura H (2019) Climate change shifts the spawning ground northward and extends the spawning period of chub mackerel in the western North Pacific. MEPS 624:155–166    
   https://doi.org/10.3354/meps13037    
 * 和文での解説    
-  [令和元 (2019) 年度ゴマサバ太平洋系群の資源評価　補足資料3](http://abchan.fra.go.jp/digests2019/index.html) （アップ待ち）
+  [令和元 (2019) 年度ゴマサバ太平洋系群の資源評価　補足資料3](http://www.fra.affrc.go.jp/shigen_hyoka/SCmeeting/2019-1/detail_goma_p_2.pdf)
 ### **マニュアル**
 * 4.figuresで出てくる図表についての説明も書かれている．モデル診断についても書いてある    
   [single species](single-species.pdf)    
@@ -56,9 +56,9 @@ ggvast https://github.com/Yuki-Kanamori/ggvast
 * VASTの推定結果を`Save.RData`から引っ張り出せる
 * 軸の名前とかが変えられる
 ### **vastのコード**
-* 複数のカテゴリーで解析した例（masaVAST）準備中
-* catchability covariateに他種の密度，overdispersion configに年と月の交互作用を入れた例（[gomasaVAST](https://github.com/Yuki-Kanamori/gomasaVAST)）
-* 共変量に水温を入れた例（masaVAST_NPFC2018）準備中
-* catchability covariateに漁具を入れた例（chiVAST）準備中
+* 複数のカテゴリーでの解析（[part3_multisp](https://github.com/ShotaNishijima/vast_workshop2020/tree/master/ws用のスクリプトとデータ), masaVAST;準備中）
+* catchability covariateを入れた解析（[part3_catchability](https://github.com/ShotaNishijima/vast_workshop2020/tree/master/ws用のスクリプトとデータ), [gomasaVAST](https://github.com/Yuki-Kanamori/gomasaVAST)）
+* overdispersionを入れた解析（[part3_overdispersion](https://github.com/ShotaNishijima/vast_workshop2020/tree/master/ws用のスクリプトとデータ), [gomasaVAST](https://github.com/Yuki-Kanamori/gomasaVAST)）
+* 共変量を入れた例（masaVAST_NPFC2018;準備中）
 ### **アップデート情報**    
 https://github.com/James-Thorson-NOAA/VAST/releases
