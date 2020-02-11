@@ -45,6 +45,8 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
 * 国内の資源評価で適用された例（和文で解説が書かれている）    
   [令和元 (2019) 年度ゴマサバ太平洋系群の資源評価　補足資料3](http://www.fra.affrc.go.jp/shigen_hyoka/SCmeeting/2019-1/detail_goma_p_2.pdf)
 ### **マニュアル**
+* 日本語マニュアル．
+  https://github.com/Yuki-Kanamori/VASTmanual_inJapanese
 * 4.figuresで出てくる図表についての説明も書かれている．モデル診断についても書いてある    
   [single species](single-species.pdf)    
   [multi species](multi-species.pdf)
