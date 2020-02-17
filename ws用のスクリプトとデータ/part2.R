@@ -2,8 +2,8 @@
 # 0. setting ----------------------------------------------------
 #if needed
 # インストールする際に色々なパッケージをアップデートするか聞かれるが，3(None)でよい
-# require(devtools)
-# install_github("Yuki-Kanamori/ggvast")
+require(devtools)
+install_github("Yuki-Kanamori/ggvast")
 
 require(tidyverse)
 require(ggvast)
@@ -34,9 +34,9 @@ vast_index = rbind(vast_index, vast_index2)
 # make a figure
 # nominalにはerror barが無いため，geom_errorbarのwarningが出るが問題ない
 ggvast::plot_index(vast_index = vast_index,
-           DG = DG,
-           category_name = category_name,
-           fig_output_dirname = fig_output_dirname)
+                   DG = DG,
+                   category_name = category_name,
+                   fig_output_dirname = fig_output_dirname)
 
 
 
@@ -59,15 +59,19 @@ scale_name = "Log density" #凡例　色の違いが何を表しているのか�
 ncol = 2 #横にいくつ図を並べるか（最大数 = 年数）
 shape = 16 #16はclosed dot
 size = 1.9 #shapeの大きさ
+zoom_out_lon = 10 #mapの拡大・縮小（1がデフォルト，数字が大きくなるほど拡大する．1以下で縮小する）
+zoom_out_lat = 10 #mapの拡大・縮小（1がデフォルト，数字が大きくなるほど拡大する．1以下で縮小する）
 
 # make figures
 ggvast::map_dens(data = data,
-         region = region,
-         scale_name = scale_name,
-         ncol = ncol,
-         shape = shape,
-         size = size,
-         fig_output_dirname =  fig_output_dirname)
+                 region = region,
+                 scale_name = scale_name,
+                 ncol = ncol,
+                 shape = shape,
+                 size = size,
+                 zoom_out_lon,
+                 zoom_out_lat,
+                 fig_output_dirname =  fig_output_dirname)
 
 
 
@@ -85,13 +89,17 @@ region = "Japan" #作図する地域を選ぶ
 ncol = 2 #横にいくつ図を並べるか（最大数 = カテゴリー数）
 shape = 16 #16はclosed dot
 size = 1.9 #shapeの大きさ
+zoom_out_lon = 10 #mapの拡大・縮小（1がデフォルト，数字が大きくなるほど拡大する．1以下で縮小する）
+zoom_out_lat = 10 #mapの拡大・縮小（1がデフォルト，数字が大きくなるほど拡大する．1以下で縮小する）
 use_biascorr = TRUE
 
 # make figures
 ggvast::map_cog(data_type = data_type,
-        category_name = category_name,
-        region = region,
-        ncol = ncol,
-        shape = shape,
-        size = size,
-        fig_output_dirname = fig_output_dirname)
+                category_name = category_name,
+                region = region,
+                ncol = ncol,
+                shape = shape,
+                size = size,
+                zoom_out_lon,
+                zoom_out_lat,
+                fig_output_dirname = fig_output_dirname)
