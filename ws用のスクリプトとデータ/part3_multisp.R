@@ -237,5 +237,5 @@ FishStatsUtils::plot_factors(Report = Report,
                              SD = Opt$SD,
                              mapdetails_list = MapDetails_List,
                              Year_Set = Year_Set,
-                             category_names = category_name,
+                             category_names = levels(Data_Geostat[, "spp"]),
                              plotdir = DateFile)
