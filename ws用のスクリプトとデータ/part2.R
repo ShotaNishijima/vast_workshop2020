@@ -59,8 +59,6 @@ scale_name = "Log density" #凡例　色の違いが何を表しているのか�
 ncol = 2 #横にいくつ図を並べるか（最大数 = 年数）
 shape = 16 #16はclosed dot
 size = 1.9 #shapeの大きさ
-zoom_out_lon = 10 #mapの拡大・縮小（1がデフォルト，数字が大きくなるほど拡大する．1以下で縮小する）
-zoom_out_lat = 10 #mapの拡大・縮小（1がデフォルト，数字が大きくなるほど拡大する．1以下で縮小する）
 
 # make figures
 ggvast::map_dens(data = data,
@@ -69,8 +67,6 @@ ggvast::map_dens(data = data,
                  ncol = ncol,
                  shape = shape,
                  size = size,
-                 zoom_out_lon,
-                 zoom_out_lat,
                  fig_output_dirname =  fig_output_dirname)
 
 
