@@ -60,6 +60,11 @@ ncol = 2 #横にいくつ図を並べるか（最大数 = 年数）
 shape = 16 #16はclosed dot
 size = 1.9 #shapeの大きさ
 
+# PDFのサイズ
+# A4サイズ（縦長）なら，width = 8.27, height = 11.69
+width = 8.27
+height = 11.69
+
 # make figures
 ggvast::map_dens(data = data,
                  region = region,
@@ -67,6 +72,8 @@ ggvast::map_dens(data = data,
                  ncol = ncol,
                  shape = shape,
                  size = size,
+                 width = width,
+                 height = height,
                  fig_output_dirname =  fig_output_dirname)
 
 
