@@ -45,14 +45,15 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
 * 国内の資源評価で適用された例（和文で解説が書かれている）    
   [令和元 (2019) 年度ゴマサバ太平洋系群の資源評価　補足資料3](http://www.fra.affrc.go.jp/shigen_hyoka/SCmeeting/2019-1/detail_goma_p_2.pdf)
 ### **マニュアル**
-* 日本語マニュアル．
-  https://github.com/Yuki-Kanamori/VASTmanual_inJapanese
+* https://github.com/James-Thorson-NOAA/VAST/tree/main/manual
 * 4.figuresで出てくる図表についての説明が書かれている．モデル診断についても書いてある    
   [single species](https://github.com/ShotaNishijima/vast_workshop2020/blob/master/Thorsonのマニュアル/multi-species.pdf)    
   [multi species](https://github.com/ShotaNishijima/vast_workshop2020/blob/master/Thorsonのマニュアル/multi-species.pdf)
 * 1.4 model settingsの参考になる
   [vast model structure](https://github.com/ShotaNishijima/vast_workshop2020/blob/master/Thorsonのマニュアル/VAST_model_structure.pdf) 最新のオプションについても書かれている    
   [user manual](https://github.com/ShotaNishijima/vast_workshop2020/blob/master/Thorsonのマニュアル/VAST_user_manual.pdf) 昔のシンプルな設定のやつ
+* 日本語マニュアル．
+  https://github.com/Yuki-Kanamori/VASTmanual_inJapanese
 ### **描画パッケージ**
 ggvast https://github.com/Yuki-Kanamori/ggvast    
 * VASTの推定結果を`Save.RData`から引っ張り出せる
