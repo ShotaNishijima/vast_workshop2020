@@ -47,10 +47,10 @@ https://gist.github.com/Yuki-Kanamori/42d04d6235170f27e6d7dfce589722a2
 ### **マニュアル**
 * 日本語マニュアル．
   https://github.com/Yuki-Kanamori/VASTmanual_inJapanese
-* 4.figuresで出てくる図表についての説明も書かれている．モデル診断についても書いてある    
+* 4.figuresで出てくる図表についての説明が書かれている．モデル診断についても書いてある->VASTのgithubが変更になり見れない    
   [single species](single-species.pdf)    
   [multi species](multi-species.pdf)
-* 1.4 model settingsの参考になる    
+* 1.4 model settingsの参考になる->VASTのgithubが変更になり見れない    
   [vast model structure](VAST_model_structure.pdf) 最新のオプションについても書かれている    
   [user manual](VAST_user_manual.pdf) 昔のシンプルな設定のやつ
 ### **描画パッケージ**
